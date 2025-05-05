@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { use } from 'react';
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const AppNavbar = () => {
+  const { user } = use(AuthContext);
   return (
     <Navbar fluid className='mb-15'>
       <NavbarBrand href="https://flowbite-react.com">
@@ -10,7 +12,7 @@ const AppNavbar = () => {
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">StarStore</span>
       </NavbarBrand>
       <div className="flex md:order-2">
-        <Button className='hover:cursor-pointer'>Login</Button>
+        {user ? "" : <Link className='hover:cursor-pointer btn bg-blue-600' to={'/login'}>Login</Link>}
         <NavbarToggle />
       </div>
       <NavbarCollapse className='text-white'>

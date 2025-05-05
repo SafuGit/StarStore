@@ -9,7 +9,6 @@ const TrendingAppCard = ({ data }) => {
           src={data.banner}
           alt={data.name}
           className="object-cover w-full h-full"
-          onError={(e) => (e.target.src = '/fallback.jpg')} // optional fallback
         />
       </figure>
       <div className="card-body bg-neutral text-neutral-content rounded-b-xl">

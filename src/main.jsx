@@ -5,6 +5,9 @@ import Root from './layouts/Root';
 import Home from './components/Home/Home';
 import './index.css';
 import Apps from './components/Apps/Apps';
+import AuthProvider from './provider/AuthProvider';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +19,14 @@ const router = createBrowserRouter([
         path: '/apps', 
         Component: Apps,
         loader: () => fetch('/data.json')
+      },
+      {
+        path: '/login',
+        Component: Login,
+      },
+      {
+        path: '/register',
+        Component: Register
       }
     ]
   },
@@ -23,6 +34,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )
