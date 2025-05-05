@@ -1,0 +1,187 @@
+[
+    {
+      "id": "app001",
+      "name": "CodeCraft Junior",
+      "developer": "BrightByte Labs",
+      "thumbnail": "https://i.ibb.co/M7kpKg1/codecraft-thumb.jpg",
+      "banner": "https://i.ibb.co/9v3QcYZ/codecraft-banner.jpg",
+      "downloads": 1200000,
+      "category": "Education",
+      "rating": 4.6,
+      "description": "Learn to code through fun challenges and storytelling! Perfect for kids and beginners.",
+      "features": [
+        "Drag-and-drop coding",
+        "Colorful animated lessons",
+        "Daily practice quests"
+      ],
+      "reviews": [
+        {
+          "user": "future_dev33",
+          "rating": 5,
+          "comment": "This app got my niece into coding—highly recommended!"
+        }
+      ]
+    },
+    {
+      "id": "app002",
+      "name": "FocusNest",
+      "developer": "NeuraSoft Studios",
+      "thumbnail": "https://i.ibb.co/TH5mrxp/focusnest-thumb.jpg",
+      "banner": "https://i.ibb.co/3pJhTf0/focusnest-banner.jpg",
+      "downloads": 850000,
+      "category": "Productivity",
+      "rating": 4.5,
+      "description": "Minimalist focus timer that helps you stay productive using the Pomodoro technique.",
+      "features": [
+        "Custom timer sessions",
+        "Distraction blocking mode",
+        "Focus analytics"
+      ],
+      "reviews": [
+        {
+          "user": "zenworker",
+          "rating": 4,
+          "comment": "Clean UI, works great. Would love some background sounds though."
+        }
+      ]
+    },
+    {
+      "id": "app003",
+      "name": "Galaxy Clash VR",
+      "developer": "NovaPixel Games",
+      "thumbnail": "https://i.ibb.co/XVskhKv/galaxyclash-thumb.jpg",
+      "banner": "https://i.ibb.co/nm62z9q/galaxyclash-banner.jpg",
+      "downloads": 500000,
+      "category": "Gaming",
+      "rating": 4.7,
+      "description": "Strap in for a 3D space dogfight experience in VR. Pilot your ship, shoot down enemies, and explore galaxies.",
+      "features": [
+        "Immersive VR combat",
+        "Upgradeable ships",
+        "Multiplayer mode"
+      ],
+      "reviews": [
+        {
+          "user": "astro_gunner",
+          "rating": 5,
+          "comment": "Feels like Star Wars with better controls—love it!"
+        }
+      ]
+    },
+    {
+      "id": "app004",
+      "name": "NoteFluent",
+      "developer": "SwiftThink Devs",
+      "thumbnail": "https://i.ibb.co/d2bftGw/notefluent-thumb.jpg",
+      "banner": "https://i.ibb.co/nMQM7K8/notefluent-banner.jpg",
+      "downloads": 2000000,
+      "category": "Productivity",
+      "rating": 4.2,
+      "description": "Elegant note-taking app with markdown support and cloud sync. Stay organized and creative.",
+      "features": [
+        "Markdown editing",
+        "Offline mode",
+        "Cross-device sync"
+      ],
+      "reviews": [
+        {
+          "user": "notegeek92",
+          "rating": 4,
+          "comment": "Great for writing blog drafts. A little laggy on old phones."
+        }
+      ]
+    },
+    {
+      "id": "app005",
+      "name": "Learnify Math",
+      "developer": "SmartWhiz Inc.",
+      "thumbnail": "https://i.ibb.co/6vhsTLC/learnifymath-thumb.jpg",
+      "banner": "https://i.ibb.co/gThTbJF/learnifymath-banner.jpg",
+      "downloads": 980000,
+      "category": "Education",
+      "rating": 4.3,
+      "description": "Interactive math lessons, quizzes, and puzzles for students from Grade 1 to 10.",
+      "features": [
+        "Level-based learning",
+        "Live progress tracking",
+        "Animated explanations"
+      ],
+      "reviews": [
+        {
+          "user": "mathmaster88",
+          "rating": 5,
+          "comment": "My son actually looks forward to math now. Awesome!"
+        }
+      ]
+    },
+    {
+      "id": "app006",
+      "name": "Pixel Siege: Warzone",
+      "developer": "RedBear Studio",
+      "thumbnail": "https://i.ibb.co/qFv0Rvf/pixelsiege-thumb.jpg",
+      "banner": "https://i.ibb.co/t2JKMpT/pixelsiege-banner.jpg",
+      "downloads": 1500000,
+      "category": "Gaming",
+      "rating": 4.1,
+      "description": "Retro-style shooter game with team-based multiplayer action. Fast-paced and addictive!",
+      "features": [
+        "Online team battles",
+        "Weapon customization",
+        "Ranked mode"
+      ],
+      "reviews": [
+        {
+          "user": "sniperboi21",
+          "rating": 4,
+          "comment": "Love the pixel graphics! Just wish there were more maps."
+        }
+      ]
+    },
+    {
+      "id": "app007",
+      "name": "MindVault",
+      "developer": "NeuroNova Tech",
+      "thumbnail": "https://i.ibb.co/NKQgbFw/mindvault-thumb.jpg",
+      "banner": "https://i.ibb.co/CVgZpq5/mindvault-banner.jpg",
+      "downloads": 720000,
+      "category": "Education",
+      "rating": 4.6,
+      "description": "A neuroscience-based learning tool to improve memory, focus, and critical thinking.",
+      "features": [
+        "Memory games",
+        "Daily brain challenges",
+        "Progress visualization"
+      ],
+      "reviews": [
+        {
+          "user": "focusfan",
+          "rating": 5,
+          "comment": "This app helped me improve concentration during exams!"
+        }
+      ]
+    },
+    {
+      "id": "app008",
+      "name": "TaskBloom",
+      "developer": "Bloomware Co.",
+      "thumbnail": "https://i.ibb.co/gtFS7Tm/taskbloom-thumb.jpg",
+      "banner": "https://i.ibb.co/3rBpHHX/taskbloom-banner.jpg",
+      "downloads": 3100000,
+      "category": "Productivity",
+      "rating": 4.9,
+      "description": "A beautiful to-do app that combines task management with habit tracking.",
+      "features": [
+        "Daily habit streaks",
+        "Task reminders",
+        "Beautiful themes"
+      ],
+      "reviews": [
+        {
+          "user": "planqueen",
+          "rating": 5,
+          "comment": "The only planner I’ve consistently used every day. It’s gorgeous and functional!"
+        }
+      ]
+    }
+  ]
+  
