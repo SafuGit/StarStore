@@ -14,7 +14,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-
 const AppFooter = () => {
   return (
     <div>
-      <Footer container className='rounded-none'>
+      <Footer container className='rounded-none mt-15'>
         <div className="w-full">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
             <div>

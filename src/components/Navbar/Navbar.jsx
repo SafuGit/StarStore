@@ -4,7 +4,7 @@ import { NavLink } from 'react-router';
 
 const AppNavbar = () => {
   return (
-    <Navbar fluid>
+    <Navbar fluid className='mb-15'>
       <NavbarBrand href="https://flowbite-react.com">
         <img src="/assets/appstore-logo.png" className="mr-3 h-8" alt="Flowbite React Logo" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">StarStore</span>
