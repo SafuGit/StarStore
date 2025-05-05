@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroHome = () => {
   return (
-    <div className="hero min-h-screen w-[95vw] mx-auto rounded-lg bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300">
+    <div className="hero min-h-screen w-[95vw] mb-15 mx-auto rounded-lg bg-gradient-to-br from-blue-900 via-blue-600 to-blue-300">
       <div className="hero-content flex-col lg:flex-row-reverse justify-around w-full">
         <img
           src="https://www.appsflyer.com/wp-content/uploads/2021/03/web-to-app-banners-square.jpg"

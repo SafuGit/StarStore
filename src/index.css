@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 @plugin "daisyui";
-
 a.active {
     text-decoration: underline;
+}
+
+body {
+    font-family: "Tuffy", sans-serif;
 }

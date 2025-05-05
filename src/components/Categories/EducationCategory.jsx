@@ -1,5 +1,4 @@
 import React from 'react';
-import AppCard from './AppCard';
 import SectionTitle from '../../utils/SectionTitle';
 
 const EducationCategory = ({data}) => {
@@ -11,7 +10,6 @@ const EducationCategory = ({data}) => {
           <AppCard data={app} key={i}></AppCard>
         ))}
       </div>
-      <AppCard></AppCard>
     </div>
   );
 };

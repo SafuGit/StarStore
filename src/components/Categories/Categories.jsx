@@ -2,13 +2,11 @@ import React from 'react';
 import EducationCategory from './EducationCategory';
 import GamingCategory from './GamingCategory';
 import ProductivityCategory from './ProductivityCategory';
+import { Outlet } from 'react-router';
 
-const Categories = ({categories}) => {
+const Categories = () => {
   return (
     <div>
-      <EducationCategory data={categories["Education"]}></EducationCategory>
-      <GamingCategory data={categories["Gaming"]}></GamingCategory>
-      <ProductivityCategory data={categories["Productivity"]}></ProductivityCategory>
     </div>
   );
 };

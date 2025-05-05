@@ -25,9 +25,8 @@ const AppNavbar = () => {
         <NavbarToggle />
       </div>
       <NavbarCollapse className='text-white'>
-        <NavLink to={'/'}>Home</NavLink>
-        <NavLink to={'/apps'}>Apps</NavLink>
-        <NavLink to={'/profile'}>Profile</NavLink>
+        <NavLink to={'/'} className={'text-lg'}>Apps</NavLink>
+        <NavLink to={'/profile'} className={'text-lg'}>Profile</NavLink>
       </NavbarCollapse>
     </Navbar>
   );
