@@ -16,7 +16,7 @@ const AppNavbar = () => {
   }
   return (
     <Navbar fluid className='mb-15'>
-      <NavbarBrand href="https://flowbite-react.com">
+      <NavbarBrand href="#">
         <img src="/assets/appstore-logo.png" className="mr-3 h-8" alt="Flowbite React Logo" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">StarStore</span>
       </NavbarBrand>
@@ -25,7 +25,7 @@ const AppNavbar = () => {
         <NavbarToggle />
       </div>
       <NavbarCollapse className='text-white'>
-        <NavLink to={'/'} className={'text-lg'}>Apps</NavLink>
+        <NavLink to={'/'} className={'text-lg'}>Apps</NavLink>  
         <NavLink to={'/profile'} className={'text-lg'}>Profile</NavLink>
       </NavbarCollapse>
     </Navbar>

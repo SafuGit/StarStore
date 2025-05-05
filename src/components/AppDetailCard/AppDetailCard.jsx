@@ -8,11 +8,11 @@ const AppDetailCard = ({data}) => {
     <div className='w-[95vw] p-8 mx-auto rounded-xl bg-[#1F2937] mt-10'>
       <h1 className='text-3xl text-center font-bold'>App Information</h1>
       <div className='divider'></div>
-      <div className='grid grid-cols-2'>
-        <div>
+      <div className='grid grid-cols-4'>
+        <div className='col-span-1'>
           <img src={data.banner} alt="" />
         </div>
-        <div>
+        <div className='col-span-3'>
           <div className='flex gap-1 mb-2'>
             <h1 className='text-3xl font-bold'>{data.name}</h1>
             <div className='badge bg-yellow-300 text-black gap-1'>{data.rating}<IoIosStar></IoIosStar></div>
@@ -34,6 +34,7 @@ const AppDetailCard = ({data}) => {
           <p className='text-xl text-gray-400'>{data.description}</p>
         </div>
       </div>
+      <button className='btn bg-green-600 w-full rounded-full mt-10'>Install App</button>
     </div>
   );
 };
