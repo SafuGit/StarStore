@@ -9,6 +9,7 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import PrivateRoute from './provider/PrivateRoute';
 import AppDetails from './components/AppDetails/AppDetails';
+import NotFound from './components/NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -42,8 +43,12 @@ const router = createBrowserRouter([
           return data;
         }
       },
-    ]
+    ],
   },
+  {
+    path: '*',
+    Component: NotFound,
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(

@@ -12,6 +12,7 @@ const Root = () => {
       '/login': 'Login - StarStore',
       '/register': 'Register - StarStore',
       '/apps/detail': 'App Detail - StarStore',
+      '/profile': 'Profile - StarStore'
     }
     document.title = routeTitles[location.pathname] || 'StarStore';
   }, [location.pathname]);
