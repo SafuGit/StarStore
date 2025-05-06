@@ -6,7 +6,7 @@ const HeroHome = () => {
       <div className="hero-content flex-col lg:flex-row-reverse justify-around w-full">
         <img
           src="https://www.appsflyer.com/wp-content/uploads/2021/03/web-to-app-banners-square.jpg"
-          className="max-w-sm rounded-lg shadow-2xl"
+          className="max-w-sm rounded-lg shadow-2xl w-full"
         />
         <div>
           <h1 className="text-5xl font-bold">The Best App Store you can find!</h1>

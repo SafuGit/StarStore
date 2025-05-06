@@ -10,16 +10,16 @@ const Categories = ({data}) => {
   }
 
   return (
-    <div className='w-[90vw] grid grid-cols-4 mx-auto'>
+    <div className='w-[90vw] lg:grid grid-cols-4 mx-auto'>
       <div>
-        <ul className="menu menu-xl bg-base-200 rounded-box w-56">
+        <ul className="menu menu-xl bg-base-200 rounded-box lg:w-56 w-full mb-4">
           {Object.keys(data).map((category, i) => (
             <li key={i}><a onClick={() => handleSetCurrentCategory(category)}>{category}</a></li>
           ))}
         </ul>
       </div>
-      <div className={currentCategory.length == 3 ? "col-span-3" : currentCategory.length == 2 ? "col-span-2" : currentCategory.length == 1 ? "col-span-1" : ""}>
-        <div className='flex justify-center items-center gap-2'>
+      <div className={currentCategory.length == 3 ? "lg:col-span-3" : currentCategory.length == 2 ? "lg:col-span-2" : currentCategory.length == 1 ? "lg:col-span-1" : ""}>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-2'>
           {currentCategory.map((app, i) => (
             <CategoryCard data={app} key={i}></CategoryCard>
           ))}
