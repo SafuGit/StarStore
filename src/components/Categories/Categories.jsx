@@ -18,7 +18,7 @@ const Categories = ({data}) => {
           ))}
         </ul>
       </div>
-      <div className={currentCategory.length == 3 ? "lg:col-span-3" : currentCategory.length == 2 ? "lg:col-span-2" : currentCategory.length == 1 ? "lg:col-span-1" : ""}>
+      <div className='col-span-3'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-2'>
           {currentCategory.map((app, i) => (
             <CategoryCard data={app} key={i}></CategoryCard>

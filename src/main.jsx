@@ -10,6 +10,7 @@ import Register from './components/Register/Register';
 import PrivateRoute from './provider/PrivateRoute';
 import AppDetails from './components/AppDetails/AppDetails';
 import NotFound from './components/NotFound/NotFound';
+import Loading from './components/Loading/Loading';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
         index: true, 
         Component: Apps,
         loader: () => fetch('/data.json'),
+        hydrateFallbackElement: <Loading></Loading>
       },
       {
         path: '/login',
@@ -41,7 +43,8 @@ const router = createBrowserRouter([
             .then(res => res.json())
             .then(data => data.find(app => app.id === params.id))
           return data;
-        }
+        },
+        hydrateFallbackElement: <Loading></Loading>
       },
     ],
   },

@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router';
+import { Outlet, useLocation, useNavigation } from 'react-router';
 import AppNavbar from '../components/Navbar/Navbar';
 import AppFooter from '../components/Footer/Footer';
+import Loading from '../components/Loading/Loading';
 
 const Root = () => {
   const location = useLocation();
+  const {state} = useNavigation();
 
   useEffect(() => {
     const routeTitles = {
@@ -19,7 +21,7 @@ const Root = () => {
   return (
     <>
       <AppNavbar></AppNavbar>
-      <Outlet></Outlet>
+      {state == 'loading' ? <Loading></Loading> : <Outlet></Outlet>}
       <AppFooter></AppFooter>
     </>
   );
