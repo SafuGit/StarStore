@@ -29,13 +29,13 @@ const Register = () => {
     event.preventDefault();
     const form = event.target;
 
+    // eslint-disable-next-line no-unused-vars
     const {name, photo, email, password} = {
       name: form.name.value,
       photo: form.photo.value,
       email: form.email.value,
       password: form.password.value
     }
-    console.log(name, photo, email, password);
 
     createUser(email, password)
       .then(result => {

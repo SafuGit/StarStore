@@ -10,7 +10,6 @@ import Categories from '../Categories/Categories';
 const Apps = () => {
   const data = useLoaderData();
   const highestRatedArray = data.sort((a, b) => b.rating - a.rating).slice(0, 4);
-  // console.log(highestRatedArray);
   const categories = data.reduce((result, app) => {
     const category = app.category;
     if (!result[category]) {
