@@ -27,6 +27,11 @@ const AppNavbar = () => {
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">StarStore</span>
       </NavbarBrand>
       <div className="flex md:order-2">
+        {user ? <div className="avatar">
+          <div className="rounded-full w-10 mr-2">
+            <img src={user.photoURL} />
+          </div>
+        </div> : ""}
         {user ? <button onClick={handleLogout} className='btn bg-red-600 mr-2 md:mr-0'>LogOut</button> : <Link className='hover:cursor-pointer btn bg-blue-600 mr-2 md:mr-0' to={'/login'}>Login</Link>}
         <NavbarToggle />
       </div>

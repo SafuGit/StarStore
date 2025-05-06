@@ -11,6 +11,7 @@ import PrivateRoute from './provider/PrivateRoute';
 import AppDetails from './components/AppDetails/AppDetails';
 import NotFound from './components/NotFound/NotFound';
 import Loading from './components/Loading/Loading';
+import Profile from './components/Profile/Profile';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,14 @@ const router = createBrowserRouter([
         },
         hydrateFallbackElement: <Loading></Loading>
       },
+      {
+        path: '/profile',
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        )
+      }
     ],
   },
   {
