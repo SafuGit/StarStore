@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import { Link } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const {signIn, signInWithGoogle} = use(AuthContext);
@@ -9,8 +10,15 @@ const Login = () => {
       .then(result => {
         // eslint-disable-next-line no-unused-vars
         const user = result.user;
+        Swal.fire({
+          icon: 'success',
+          title: "Succesfully Logged In!",
+        })
       }).catch(error => {
-        alert(error.message);
+        Swal.fire({
+          icon: 'error',
+          title: error.message,
+        })
       })
   }
   const handleLogin = (event) => {
@@ -24,9 +32,15 @@ const Login = () => {
       .then(result => {
         // eslint-disable-next-line no-unused-vars
         const user = result.user;
+        Swal.fire({
+          icon: 'success',
+          title: "Succesfully Logged In!",
+        })
       }).catch(error => {
-        // *TODO - Implement react toast here to
-        alert(error.message);
+        Swal.fire({
+          icon: 'error',
+          title: error.message,
+        })
       })
   }
   return (

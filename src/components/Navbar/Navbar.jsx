@@ -2,16 +2,22 @@ import React, { use } from 'react';
 import { Button, Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AppNavbar = () => {
   const { user, logOut } = use(AuthContext);
   const handleLogout = () => {
     logOut()
       .then(() => {
-        //*TODO - setup react toast here
-        alert("Logged out successfully")
-      }).catch(() => {
-        alert("Something went wrong")
+        Swal.fire({
+          icon: 'success',
+          title: "Succesfully Logged Out!",
+        })
+      }).catch((error ) => {
+        Swal.fire({
+          icon: 'error',
+          title: error.message,
+        })
       })
   }
   return (
