@@ -3,7 +3,6 @@ import { IoIosStar } from 'react-icons/io';
 import { Link } from 'react-router';
 
 const TrendingCards = ({data}) => {
-  console.log(data);
   const downloads = data.downloads.toLocaleString();
   return (
     <div className="card bg-[#1F2937] shadow-sm flex-wrap">

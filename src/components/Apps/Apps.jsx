@@ -4,12 +4,21 @@ import { Outlet, useLoaderData } from 'react-router';
 import TrendingCards from '../TrendingCards/TrendingCards';
 import HeroHome from '../Home/HeroHome';
 import Slider from '../Slider/Slider';
+import Categories from '../Categories/Categories';
 
 
 const Apps = () => {
   const data = useLoaderData();
   const highestRatedArray = data.sort((a, b) => b.rating - a.rating).slice(0, 4);
-  console.log(highestRatedArray);
+  // console.log(highestRatedArray);
+  const categories = data.reduce((result, app) => {
+    const category = app.category;
+    if (!result[category]) {
+      result[category] = [];
+    }
+    result[category].push(app);
+    return result;
+  }, {})
   return (
     <>
       <HeroHome></HeroHome>
@@ -21,6 +30,8 @@ const Apps = () => {
           <TrendingCards data={app} key={i}></TrendingCards>
         ))}
       </div>
+      <SectionTitle title={'Categories'}></SectionTitle>
+      <Categories data={categories}></Categories>
     </>
   )
 };
