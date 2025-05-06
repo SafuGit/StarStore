@@ -25,7 +25,7 @@ const Apps = () => {
       <SectionTitle title={"From our Sponsors."}></SectionTitle>
       <Slider></Slider>
       <SectionTitle title={'Trending Apps'}></SectionTitle>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 justify-center w-[90vw] mx-auto'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 justify-center w-[90vw] mx-auto'>
         {highestRatedArray.map((app, i) => (
           <TrendingCards data={app} key={i}></TrendingCards>
         ))}
