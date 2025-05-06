@@ -2,7 +2,7 @@ import React from 'react';
 import { BsPerson } from 'react-icons/bs';
 import { IoIosStar } from 'react-icons/io';
 
-const AppDetailCard = ({data}) => {
+const AppDetailCard = ({data, installed, handleSetInstalled}) => {
   const downloads = data.downloads.toLocaleString();
   return (
     <div className='w-[95vw] p-8 mx-auto rounded-xl bg-[#1F2937] mt-10'>
@@ -34,7 +34,7 @@ const AppDetailCard = ({data}) => {
           <p className='text-xl text-gray-400'>{data.description}</p>
         </div>
       </div>
-      <button className='btn bg-green-600 w-full rounded-full mt-10'>Install App</button>
+      <button className={installed ? 'btn bg-red-600 w-full rounded-full mt-10' : 'btn bg-green-600 w-full rounded-full mt-10'} onClick={() => handleSetInstalled()}>{installed ? "Uninstall" : "Install App"}</button>
     </div>
   );
 };

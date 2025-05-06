@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppDetailHeading from '../AppDetailHeading/AppDetailHeading';
 import { useLoaderData } from 'react-router';
 import AppDetailCard from '../AppDetailCard/AppDetailCard';
 
 const AppDetails = () => {
   const data = useLoaderData();
-  console.log(data);
+
+  const [installed, setInstalled] = useState(false);
+  const handleSetInstalled = () => {
+    setInstalled(!installed);
+  }
+
   return (
     <div>
       <AppDetailHeading></AppDetailHeading>
-      <AppDetailCard data={data}></AppDetailCard>
+      <AppDetailCard data={data} installed={installed} handleSetInstalled={handleSetInstalled}></AppDetailCard>
     </div>
   );
 };

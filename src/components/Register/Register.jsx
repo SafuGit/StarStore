@@ -16,6 +16,7 @@ const Register = () => {
           icon: 'success',
           title: "Succesfully Logged In!",
         })
+        navigate("/")
       }).catch(error => {
         Swal.fire({
           icon: 'error',

@@ -1,10 +1,11 @@
 import React, { use } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
 import Swal from 'sweetalert2';
 
 const Login = () => {
   const {signIn, signInWithGoogle} = use(AuthContext);
+  const navigate = useNavigate();
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then(result => {
@@ -14,6 +15,7 @@ const Login = () => {
           icon: 'success',
           title: "Succesfully Logged In!",
         })
+        navigate("/");
       }).catch(error => {
         Swal.fire({
           icon: 'error',
@@ -36,6 +38,7 @@ const Login = () => {
           icon: 'success',
           title: "Succesfully Logged In!",
         })
+        navigate("/");
       }).catch(error => {
         Swal.fire({
           icon: 'error',
