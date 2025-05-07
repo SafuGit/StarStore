@@ -16,7 +16,7 @@ const AppDetailReview = ({handleSetReview, reviews}) => {
     const new_review = {
       comment,
       rating,
-      userName
+      user: userName
     }
 
     handleSetReview(new_review);
@@ -44,7 +44,7 @@ const AppDetailReview = ({handleSetReview, reviews}) => {
           </fieldset>
         </form>
         <div className='w-1/2 flex items-center flex-col gap-4'>
-          <img className='w-120 rounded-xl' src="https://appsamurai.com/wp-content/uploads/2016/08/shutterstock_1562183146-scaled.jpg" alt="" />
+          <img className='w-120 rounded-xl' src="https://www.appsflyer.com/wp-content/uploads/2022/12/Apple-app-store-vs-Google-play-store-reviews-1.jpg" alt="" />
           <h1 className='font-bold text-xl'>Your Review helps us improve our app!</h1>
         </div>
       </div>
