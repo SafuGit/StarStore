@@ -1,3 +1,22 @@
+# StarStore
+*An AppStore like app focused offering Trending Apps, Categorized Browsing, and User Reviews.*
+## Live URL
+- https://safu-a9.web.app/
+## Packages Used
+
+```
+"@kkx64/react-simple-carousel": "^1.5.8",
+"@tailwindcss/vite": "^4.1.5",
+"firebase": "^11.6.1",
+"flowbite-react": "^0.11.7",
+"react": "^19.0.0",
+"react-dom": "^19.0.0",
+"react-icons": "^5.5.0",
+"react-router": "^7.5.3",
+"sweetalert2": "^11.21.0",
+"tailwindcss": "^4.1.5"
+```
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
