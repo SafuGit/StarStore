@@ -9,7 +9,8 @@ const TrendingCards = ({data}) => {
       <figure>
         <img
           src={data.thumbnail}
-          alt="Shoes" />
+          alt="Shoes" 
+          className='w-full h-45' />
       </figure>
       <div className="card-body">
         <h2 className="card-title">

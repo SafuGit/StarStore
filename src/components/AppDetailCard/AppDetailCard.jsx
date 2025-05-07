@@ -10,8 +10,8 @@ const AppDetailCard = ({data, installed, handleSetInstalled}) => {
       <h1 className='text-3xl text-center font-bold'>App Information</h1>
       <div className='divider'></div>
       <div className='md:grid md:grid-cols-4 flex flex-col'>
-        <div className='col-span-1'>
-          <img src={data.banner} alt="" />
+        <div className='col-span-1 mr-8'>
+          <img src={data.banner} alt="" className='rounded-xl' />
         </div>
         <div className='col-span-3'>
           <div className='flex gap-1 mb-2'>

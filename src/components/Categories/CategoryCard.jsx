@@ -10,9 +10,10 @@ const CategoryCard = ({data}) => {
       <figure>
         <img
           src={data.thumbnail}
-          alt="Shoes" />
+          alt="Shoes" 
+          className='w-full h-40' />
       </figure>
-      <div className='divider divider-neutral'></div>
+      {/* <div className='divider divider-neutral mt-0'></div> */}
       <div className="card-body">
         <h2 className="card-title">
           {data.name}
