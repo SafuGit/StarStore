@@ -1,0 +1,33 @@
+[
+    {
+      "id": "story01",
+      "title": "How 'FocusFlow' Became the #1 Productivity App",
+      "summary": "The team behind FocusFlow shares how they scaled from a dorm-room idea to millions of downloads in under a year.",
+      "image": "/images/focusflow-story.jpg",
+      "cta": {
+        "text": "Read More",
+        "link": "/stories/focusflow"
+      }
+    },
+    {
+      "id": "story02",
+      "title": "Indie Dev Spotlight: LunaCraft",
+      "summary": "A solo developer created LunaCraft in 6 months and reached the top charts without any marketing budget.",
+      "image": "/images/lunacraft-spotlight.jpg",
+      "cta": {
+        "text": "Explore Story",
+        "link": "/stories/lunacraft"
+      }
+    },
+    {
+      "id": "story03",
+      "title": "How App Reviews Shape User Trust",
+      "summary": "We dive into the science behind star ratings and user trust—and how to encourage authentic reviews.",
+      "image": "/images/reviews-insights.jpg",
+      "cta": {
+        "text": "Learn More",
+        "link": "/stories/reviews-insights"
+      }
+    }
+  ]
+  

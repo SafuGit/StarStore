@@ -11,7 +11,7 @@ const Categories = ({data}) => {
   }
 
   return (
-    <div className='w-[90vw] lg:grid grid-cols-4 mx-auto'>
+    <div className='w-[90vw] lg:grid grid-cols-4 mx-auto mb-50'>
       <div>
         <ul className="menu menu-xl bg-base-200 rounded-box lg:w-56 w-full mb-4">
           {Object.keys(data).map((category, i) => (

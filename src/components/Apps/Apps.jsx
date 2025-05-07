@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import SectionTitle from '../../utils/SectionTitle';
 import { Outlet, useLoaderData } from 'react-router';
 import TrendingCards from '../TrendingCards/TrendingCards';
 import HeroHome from '../Home/HeroHome';
 import Slider from '../Slider/Slider';
 import Categories from '../Categories/Categories';
+import Loading from '../Loading/Loading';
+import FeaturedStories from '../FeaturedStories/FeaturedStories';
+import './Apps.css';
 
 
 const Apps = () => {
@@ -24,13 +27,19 @@ const Apps = () => {
       <SectionTitle title={"From our Sponsors."}></SectionTitle>
       <Slider></Slider>
       <SectionTitle title={'Trending Apps'}></SectionTitle>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 justify-center w-[90vw] mx-auto'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 justify-center w-[90vw] mx-auto mb-60'>
         {highestRatedArray.map((app, i) => (
           <TrendingCards data={app} key={i}></TrendingCards>
         ))}
       </div>
       <SectionTitle title={'Categories'}></SectionTitle>
       <Categories data={categories}></Categories>
+      <div className='storySection p-4 mt-20'>
+        <SectionTitle title={'Featured Stories'} className={''}></SectionTitle>
+        <Suspense fallback={<Loading></Loading>}>
+          <FeaturedStories></FeaturedStories>
+        </Suspense>
+      </div>
     </>
   )
 };
