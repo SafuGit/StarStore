@@ -11,6 +11,7 @@ const AppDetails = () => {
   const data = useLoaderData();
 
   const [installed, setInstalled] = useState(false);
+  const [installedOnce, setInstalledOnce] = useState(false);
   const [reviews, setReviews] = useState(data.reviews);
 
   const handleSetReview = (review) => {
@@ -38,13 +39,14 @@ const AppDetails = () => {
         toast: true
       })
     }
+    setInstalledOnce(true);
   }
 
   return (
     <div>
       <AppDetailHeading></AppDetailHeading>
       <AppDetailCard data={data} installed={installed} handleSetInstalled={handleSetInstalled}></AppDetailCard>
-      <AppDetailReview reviews={reviews} handleSetReview={handleSetReview}></AppDetailReview>
+      <AppDetailReview reviews={reviews} handleSetReview={handleSetReview} installedOnce={installedOnce}></AppDetailReview>
       <SectionTitle title={"Reviews"} className={'!w-[95vw] !text-center mt-20'}></SectionTitle>
       <Reviews data={reviews}></Reviews>
     </div>

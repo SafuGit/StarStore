@@ -1,26 +1,35 @@
 import React, { use } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
-const AppDetailReview = ({handleSetReview, reviews}) => {
+const AppDetailReview = ({handleSetReview, reviews, installedOnce}) => {
   const {user} = use(AuthContext);
 
   const handleReviewSubmit = (event) => {
     event.preventDefault();
-    const form = event.target;
-    // console.log(form);
-    const [comment, rating] = [form.comment.value, form.rating.value];
-    console.log(comment, rating);
+    if (installedOnce) {
+      const form = event.target;
+      // console.log(form);
+      const [comment, rating] = [form.comment.value, form.rating.value];
+      console.log(comment, rating);
 
-    const userName = user.displayName;
+      const userName = user.displayName;
 
-    const new_review = {
-      comment,
-      rating,
-      user: userName
+      const new_review = {
+        comment,
+        rating,
+        user: userName
+      }
+
+      handleSetReview(new_review);
+      console.log(reviews);
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: "Please install the app first!",
+      })
+      return;
     }
-
-    handleSetReview(new_review);
-    console.log(reviews);
   }
 
   return (
