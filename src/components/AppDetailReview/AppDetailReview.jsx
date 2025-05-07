@@ -21,6 +21,10 @@ const AppDetailReview = ({handleSetReview, reviews, installedOnce}) => {
       }
 
       handleSetReview(new_review);
+      Swal.fire({
+        icon: 'success',
+        title: "Succesfully Posted Review!",
+      })
     } else {
       Swal.fire({
         icon: 'error',
