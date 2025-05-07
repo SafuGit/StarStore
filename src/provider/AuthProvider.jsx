@@ -57,7 +57,6 @@ const AuthProvider = ({children}) => {
     signInWithGoogle,
     updateNamePhoto
   }
-  console.log(user);
   return <AuthContext value={authData}>
     {children}
   </AuthContext>

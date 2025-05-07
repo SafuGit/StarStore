@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 import Swal from 'sweetalert2';
 
+// eslint-disable-next-line no-unused-vars
 const AppDetailReview = ({handleSetReview, reviews, installedOnce}) => {
   const {user} = use(AuthContext);
 
@@ -9,9 +10,7 @@ const AppDetailReview = ({handleSetReview, reviews, installedOnce}) => {
     event.preventDefault();
     if (installedOnce) {
       const form = event.target;
-      // console.log(form);
       const [comment, rating] = [form.comment.value, form.rating.value];
-      console.log(comment, rating);
 
       const userName = user.displayName;
 
@@ -22,7 +21,6 @@ const AppDetailReview = ({handleSetReview, reviews, installedOnce}) => {
       }
 
       handleSetReview(new_review);
-      console.log(reviews);
     } else {
       Swal.fire({
         icon: 'error',
