@@ -1,12 +1,37 @@
 import React, { use } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 import { MdEmail, MdPerson, MdVerified } from 'react-icons/md';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router';
 
 const Profile = () => {
-  const { user } = use(AuthContext);
+  const { user, updateNamePhoto } = use(AuthContext);
+  const navigate = useNavigate();
 
   const handleUpdateProfile = (event) => {
     event.preventDefault();
+    const form = event.target;
+    const [name, photo] = [form.name.value, form.photo.value];
+    if (name === "" || photo === "") {
+      Swal.fire({
+        icon: 'error',
+        title: "Please fill all the fields!",
+      })
+      return;
+    }
+    updateNamePhoto(name, photo)
+    .then(() => {
+      Swal.fire({
+        icon: 'success',
+        title: "Succesfully Updated Profile!",
+      })
+      navigate("/profile");
+    }).catch((error) => {
+      Swal.fire({
+        icon: 'error',
+        title: error.message,
+      })
+    })
   }
 
   return (

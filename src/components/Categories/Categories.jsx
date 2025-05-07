@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TrendingCards from '../TrendingCards/TrendingCards';
 import CategoryCard from './CategoryCard';
+import SectionTitle from '../../utils/SectionTitle';
 
 const Categories = ({data}) => {
   const [currentCategory, setCurrentCategory] = useState(data['Productivity']);
@@ -19,6 +20,7 @@ const Categories = ({data}) => {
         </ul>
       </div>
       <div className='col-span-3'>
+        <SectionTitle title={currentCategory[0].category} className='!mb-8 !my-0 !w-full'></SectionTitle>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center gap-2'>
           {currentCategory.map((app, i) => (
             <CategoryCard data={app} key={i}></CategoryCard>

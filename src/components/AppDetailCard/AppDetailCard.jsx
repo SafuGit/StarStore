@@ -4,6 +4,7 @@ import { IoIosStar } from 'react-icons/io';
 
 const AppDetailCard = ({data, installed, handleSetInstalled}) => {
   const downloads = data.downloads.toLocaleString();
+
   return (
     <div className='w-[95vw] p-8 mx-auto rounded-xl bg-[#1F2937] mt-10'>
       <h1 className='text-3xl text-center font-bold'>App Information</h1>

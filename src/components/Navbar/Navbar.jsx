@@ -28,7 +28,7 @@ const AppNavbar = () => {
       </NavbarBrand>
       <div className="flex md:order-2">
         {user ? <div className="avatar">
-          <div className="rounded-full w-10 mr-2">
+          <div className="rounded-full w-10 max-[400px]:!hidden mr-2">
             <img src={user.photoURL} />
           </div>
         </div> : ""}
@@ -36,8 +36,15 @@ const AppNavbar = () => {
         <NavbarToggle />
       </div>
       <NavbarCollapse className='text-white'>
-        <NavLink to={'/'} className={'text-lg'}>Apps</NavLink>  
+        <NavLink to={'/'} className={'text-lg'}>Apps</NavLink>
         <NavLink to={'/profile'} className={'text-lg'}>Profile</NavLink>
+        <NavbarLink className='!block min-[400px]:!hidden'>
+          {user ? <div className="avatar">
+            <div className="rounded-full w-10 mr-2">
+              <img src={user.photoURL} />
+            </div>
+          </div> : ""}
+        </NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );
