@@ -1,0 +1,74 @@
+{
+    "awards": [
+      {
+        "title": "Most Downloaded App",
+        "description": "Awarded to the app with the highest number of downloads in the store.",
+        "app": {
+          "name": "SuperApp",
+          "developer": "SuperDev",
+          "category": "Productivity",
+          "downloads": 15000000,
+          "platform": "iOS, Android"
+        },
+        "year": 2025
+      },
+      {
+        "title": "Most Used App",
+        "description": "Awarded to the app with the highest active usage over a 30-day period.",
+        "app": {
+          "name": "DailyFit",
+          "developer": "FitTech Inc.",
+          "category": "Health & Fitness",
+          "daily_active_users": 1000000,
+          "platform": "iOS, Android"
+        },
+        "year": 2025
+      },
+      {
+        "title": "Best New App",
+        "description": "Awarded to the best app launched in the past year, based on innovation and user feedback.",
+        "app": {
+          "name": "TaskMaster",
+          "developer": "TaskGuru",
+          "category": "Productivity",
+          "downloads": 2000000,
+          "platform": "iOS"
+        },
+        "year": 2025
+      },
+      {
+        "title": "Best App Design",
+        "description": "Awarded to the app with the most visually appealing and user-friendly design.",
+        "app": {
+          "name": "PhotoEdit Pro",
+          "developer": "PixelApps",
+          "category": "Photography",
+          "platform": "iOS, Android"
+        },
+        "year": 2025
+      },
+      {
+        "title": "Best Customer Support",
+        "description": "Awarded to the app with the most responsive and helpful customer support.",
+        "app": {
+          "name": "GroceryBuddy",
+          "developer": "QuickShopping",
+          "category": "Lifestyle",
+          "platform": "iOS, Android"
+        },
+        "year": 2025
+      },
+      {
+        "title": "Most Innovative App",
+        "description": "Awarded to the app that brought new and creative features to its category.",
+        "app": {
+          "name": "VoiceMaster",
+          "developer": "TechTalk",
+          "category": "Communication",
+          "platform": "iOS, Android"
+        },
+        "year": 2025
+      }
+    ]
+  }
+  

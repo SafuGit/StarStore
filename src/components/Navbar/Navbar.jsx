@@ -38,6 +38,7 @@ const AppNavbar = () => {
       <NavbarCollapse className='text-white'>
         <NavLink to={'/'} className={'text-lg'}>Apps</NavLink>
         <NavLink to={'/profile'} className={'text-lg'}>Profile</NavLink>
+        <NavLink to={'/awards'} className={'text-lg'}>Awards</NavLink>
         <NavbarLink className='!block min-[400px]:!hidden'>
           {user ? <div className="avatar">
             <div className="rounded-full w-10 mr-2">

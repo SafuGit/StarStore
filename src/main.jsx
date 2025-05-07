@@ -12,6 +12,7 @@ import AppDetails from './components/AppDetails/AppDetails';
 import NotFound from './components/NotFound/NotFound';
 import Loading from './components/Loading/Loading';
 import Profile from './components/Profile/Profile';
+import Award from './components/Awards/Award';
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,12 @@ const router = createBrowserRouter([
             <Profile></Profile>
           </PrivateRoute>
         )
+      },
+      {
+        path: '/awards',
+        Component: Award,
+        loader: () => fetch('/awards.json'),
+        hydrateFallbackElement: <Loading></Loading>
       }
     ],
   },
