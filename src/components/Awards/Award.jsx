@@ -8,7 +8,7 @@ const Award = () => {
     <div className='w-[95vw] mx-auto'>
       <h1 className='font-bold text-5xl text-center'>StarStore Awards.</h1>
       <div className='divider'></div>
-      <div className='grid grid-cols-2 gap-20'>
+      <div className='grid sm:grid-cols-2 grid-cols-1 gap-20'>
         {data.awards.map((award, i) => (
           <AwardCard data={award} key={i}></AwardCard>
         ))}

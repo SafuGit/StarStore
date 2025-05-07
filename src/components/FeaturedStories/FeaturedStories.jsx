@@ -7,7 +7,7 @@ const fetchStories = fetch('/featuredStories.json')
 const FeaturedStories = () => {
   const data = use(fetchStories);
   return (
-    <div className='flex gap-4 w-[90vw] mx-auto'>
+    <div className='flex flex-col sm:flex-row gap-4 w-[90vw] mx-auto'>
       {data.map((story, i) => (
         <FeaturedStoryCard data={story} key={i} ></FeaturedStoryCard>
       ))}

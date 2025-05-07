@@ -35,18 +35,18 @@ const Profile = () => {
   }
 
   return (
-    <div className='w-[90vw] mx-auto flex gap-4'>
-      <div className='flex flex-col items-center bg-[#1F2937] rounded-lg p-8 w-[20%] h-full'>
+    <div className='w-[90vw] mx-auto flex flex-col sm:flex-row gap-4'>
+      <div className='flex flex-col items-center bg-[#1F2937] rounded-lg p-8 w-[80%] mx-auto sm:w-[20%] h-full'>
         <div>
           <img className='rounded-full' src={user.photoURL} alt="" />
         </div>
         <div className='divider'></div>
         <h1 className='text-3xl'>{user.displayName}</h1>
       </div>
-      <div className='bg-[#1F2937] rounded-lg p-8 w-[80%]'>
+      <div className='bg-[#1F2937] rounded-lg p-8 w-[90%] sm:w-[80%] mx-auto'>
         <h1 className='text-5xl font-medium mb-10'>Profile</h1>
         <div className='divider'></div>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 sm:grid-cols-2'>
           <div>
             <div className='text-xl text-gray-400 flex gap-2 mb-2'>
               <MdEmail className='text-3xl'></MdEmail>

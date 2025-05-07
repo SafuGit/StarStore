@@ -34,7 +34,7 @@ const Apps = () => {
       </div>
       <SectionTitle title={'Categories'}></SectionTitle>
       <Categories data={categories}></Categories>
-      <div className='storySection p-4 mt-20'>
+      <div className='storySection sm:p-4 mt-20'>
         <SectionTitle title={'Featured Stories'} className={''}></SectionTitle>
         <Suspense fallback={<Loading></Loading>}>
           <FeaturedStories></FeaturedStories>
