@@ -2,6 +2,21 @@
 *An AppStore like app focused offering Trending Apps, Categorized Browsing, and User Reviews.*
 ## Live URL
 - https://safu-a9.web.app/
+## FEATURES:-
+- **APP INSTALLATION**: Install Different apps.
+- **FIREBASE AUTH**: Login with google or email using Firebase Auth.
+- **CLEAN UI**: Clean design/ui.
+
+## TECH STACK
+Frontend: React, React-Router, DaisyUI, HTML-CSS
+Backend: NodeJS, Express, Firebase, JWT, MongoDB
+
+## How to Run/Deploy
+- Clone this github repository to your local machine.
+- Run "npm install" first to install all the packages.
+- Run "npm run dev" to run the app in development mode.
+- Run "npm run build" to build the app, The build will be in the dist folder. You can preview with "npm run preview".
+  
 ## Packages Used
 
 ```
@@ -16,6 +31,9 @@
 "sweetalert2": "^11.21.0",
 "tailwindcss": "^4.1.5"
 ```
+
+## SCREENSHOT
+![image](https://github.com/user-attachments/assets/e786df39-450e-453e-b577-bae886f89bd6)
 
 # React + Vite
 
